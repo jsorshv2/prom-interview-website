@@ -1,59 +1,66 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Prom Interview Sign-up</title>
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <main>
-        <div id="signup">
-        <h1>Prom Interview Sign-up</h1>
-        <p class="sub">Pick a day and a 10-minute slot. Interviews are online, 4:00–7:00pm.</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+		<title>Prom Interview Sign-up</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main>
+			<div id="signup">
+				<h1>Prom Interview Sign-up</h1>
+				<p class="sub">
+					Pick a day and a 10-minute slot. Interviews are online, 4:00–7:00pm.
+				</p>
 
-        <div id="notice" class="warn"></div>
+				<div id="notice" class="warn"></div>
 
-        <div class="card">
-            <div id="mine" class="ok"></div>
-            <form id="f">
-            <div class="full">
-                <label for="name">Full name</label>
-                <input id="name" required placeholder="Your full name">
-            </div>
-            <div>
-                <label for="cls">Class</label>
-                <select id="cls" required></select>
-            </div>
-            <div>
-                <label for="role">Role applied for</label>
-                <select id="role" required></select>
-            </div>
-            <div class="full">
-                <label for="day">Day</label>
-                <select id="day">
-                <option value="2026-10-03">Sat 3 Oct</option>
-                <option value="2026-10-04">Sun 4 Oct</option>
-                </select>
-            </div>
+				<div class="card">
+					<div id="mine" class="ok"></div>
+					<form id="f">
+						<div class="full">
+							<label for="name">Full name</label>
+							<input id="name" required placeholder="Your full name" />
+						</div>
+						<div>
+							<label for="cls">Class</label>
+							<select id="cls" required></select>
+						</div>
+						<div>
+							<label for="role">Role applied for</label>
+							<select id="role" required></select>
+						</div>
+						<div class="full">
+							<label for="day">Day</label>
+							<select id="day">
+								<option value="2026-10-03">Sat 3 Oct</option>
+								<option value="2026-10-04">Sun 4 Oct</option>
+								<option value="2026-10-17">Sat 17 Oct</option>
+								<option value="2026-10-18">Sun 18 Oct</option>
+							</select>
+						</div>
 
-            <div class="full">
-                <label>Select a Time Slot</label>
-                <div id="slot-tiles" class="tile-grid"></div>
-                <input type="hidden" id="slot" required>
-            </div>
+						<div class="full">
+							<label>Select a Time Slot</label>
+							<div id="slot-tiles" class="tile-grid"></div>
+							<input type="hidden" id="slot" required />
+						</div>
 
-            <div class="full warn" id="msg"></div>
-            <div class="full">
-                <button type="submit" id="save">Book my interview</button>
-            </div>
-            </form>
-        </div>
+						<div class="full warn" id="msg"></div>
+						<div class="full">
+							<button type="submit" id="save">Book my interview</button>
+						</div>
+					</form>
+				</div>
 
-        <p><a href="staff.html" class="link">Interviewer login &rarr;</a></p>
-        </div>
-    </main>
+				<p><a href="staff.html" class="link">Interviewer login &rarr;</a></p>
+			</div>
+		</main>
 
-    <script src="script.js"></script>
-    </body>
-    </html>
+		<script src="script.js"></script>
+	</body>
+</html>

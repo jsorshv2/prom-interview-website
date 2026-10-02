@@ -4,7 +4,6 @@ from flask import Flask, request, jsonify, send_from_directory
 
 app = Flask(__name__, static_folder=".")
 
-# Change credentials here whenever needed
 STAFF_USERNAME = "supercoolinterviewers6767"
 STAFF_PASSWORD = "wearetherealwsdprom6767"
 DB_FILE = os.path.join(os.path.dirname(__file__), "database.db")
@@ -30,10 +29,8 @@ def init_db():
         """)
         conn.commit()
 
-# Ensure database table exists when Gunicorn loads the app in production
 init_db()
 
-# --- SERVE HTML PAGES ---
 
 @app.route("/")
 def index():
@@ -47,7 +44,6 @@ def staff_page():
 def static_files(path):
     return send_from_directory(".", path)
 
-# --- API ENDPOINTS ---
 
 @app.route("/api/interviews", methods=["GET"])
 def get_interviews():
