@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Interviewer Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <main>
+        <div id="staff">
+        <h1>Interviewer View</h1>
+        <p class="sub">
+            <a href="index.html" class="link">&larr; Back to sign-up</a>
+        </p>
+
+        <div class="card" id="login">
+            <h2>Log in</h2>
+            <form id="lf" style="display: flex; flex-direction: column; gap: 10px;">
+            <div>
+                <label for="un">Username</label>
+                <input id="un" type="text" placeholder="Username" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="pw">Password</label>
+                <input id="pw" type="password" placeholder="Password" autocomplete="off" required>
+            </div>
+            <button type="submit">Log in</button>
+            </form>
+            <div class="warn" id="lmsg" style="margin-top: 8px;"></div>
+        </div>
+
+        <div class="card" id="table" hidden>
+            <h2 id="tcount">Applicants</h2>
+            <div class="wrap" id="tbl"></div>
+        </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
