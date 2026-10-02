@@ -6,7 +6,7 @@ app = Flask(__name__, static_folder=".")
 
 # Change credentials here whenever needed
 STAFF_USERNAME = "supercoolinterviewers6767"
-STAFF_PASSWORD = "banana_pineapple_99!"
+STAFF_PASSWORD = "wearetherealwsdprom6767"
 DB_FILE = os.path.join(os.path.dirname(__file__), "database.db")
 
 def get_db():

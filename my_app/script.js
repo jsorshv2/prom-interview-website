@@ -5,12 +5,11 @@
     ];
 
     var ROLES = [
-        "Prom Committee Lead",
-        "Decorations & Theme",
-        "Media & Photography",
-        "Logistics & Setup",
-        "DJ & Entertainment",
-        "Event Host / MC"
+        "Entertainment",
+        "Logistics",
+        "Design & Decor",
+        "Marketing & Promotions",
+        "Budgeting"
     ];
 
     var $ = function (id) { return document.getElementById(id); };
